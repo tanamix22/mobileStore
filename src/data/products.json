@@ -2,7 +2,7 @@
     {
         "productId": 1,
         "brand": "Samsung",
-        "model": "Galaxy S23",
+        "model": "Galaxy S23 prueba1",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
         "color": ["color__three", "color__one", "color__two"],
@@ -19,7 +19,7 @@
     {
         "productId": 2,
         "brand": "Samsung",
-        "model": "Galaxy S23",
+        "model": "Galaxy S23 prueba2",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
         "color": ["color__three", "color__one", "color__two"],
