@@ -1,8 +1,12 @@
+@import '../../styles//vars';
 
 .grid{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     grid-gap: 20px;
     flex-wrap: wrap;
     padding: 10px;
+    @media (min-width:$desktop) {
+        justify-content: space-between;
+    }
 }

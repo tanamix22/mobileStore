@@ -1,0 +1,8 @@
+@import '../../styles//vars';
+.layout{
+    @media (min-width:$desktop) {
+        max-width: 1720px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    } 
+}
