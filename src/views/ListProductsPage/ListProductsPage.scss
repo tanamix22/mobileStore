@@ -6,7 +6,10 @@
     grid-gap: 20px;
     flex-wrap: wrap;
     padding: 10px;
-    @media (min-width:$desktop) {
+    @media (max-width:$desktop) {
+        padding:25px;
+    }
+    @media (min-width:770px) {
         justify-content: space-between;
     }
 }
