@@ -1,13 +1,12 @@
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
-import './Layout';
+import Footer from '../Footer/Footer'
+import Header from '../Header/Header'
+import './Layout.scss'
 
-function Layout( { children }  ) {
-
+function Layout ({ children }) {
   return (
     <div className='layout'>
       <Header />
-        <main>{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   )
