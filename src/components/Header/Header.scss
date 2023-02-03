@@ -1,0 +1,36 @@
+@import '../../styles//vars';
+
+.header{
+   background-color: $primary-color;
+   &__bar{
+    position: static;
+   }
+   &__toolbar{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    margin: 0;
+    &--cart{
+        padding: 0 12px;
+        display: flex;
+        svg{
+            font-size: 30px;
+            color: $Primary-titles;
+        }
+    }
+    &--title{
+        padding: 0 12px;
+        .navigatelink {
+            text-decoration: none;
+        }
+        h2{
+            color: $Primary-titles;
+            font-weight: 900;
+            margin: 12px;
+            font-size: 30px;
+        }
+    }
+    }
+}
