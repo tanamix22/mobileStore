@@ -13,7 +13,9 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
     "react-modern-drawer": "^1.2.0",
-    "react-router-dom": "^6.6.0"
+    "react-router-dom": "^6.6.0",
+    "react-simple-star-rating": "^2.1.0",
+    "sweetalert2": "^11.7.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
