@@ -1,0 +1,48 @@
+@import '../../styles//vars';
+
+.section__image {
+    margin: 20px;
+    .main__image {
+        width: 75%;
+        cursor:crosshair;
+        &:hover{
+            scale: 1.3;
+        }
+    }
+    @media(min-width: $desktop){
+        display: flex;
+        flex-direction: row-reverse;
+        width: 50%;
+    }
+    &--pics{
+        display: flex;
+        border: 1px solid $dots;
+        @media(min-width: $desktop){
+            display: block !important;
+        }
+        img {
+            height: 100%;
+        }
+        .image__secundary{
+            @media(max-width: $desktop){
+                border-right: 1px solid $dots;
+            }
+        }
+    }
+    .section__details {
+        &--selector {
+            font-size: 12px;
+            height: 20px;
+            width: 125px; 
+        }
+    }
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    cursor: pointer;
+    &:hover{
+        scale: 1.1;
+    }
+    } 
+}
