@@ -1,11 +1,11 @@
 import { useContext } from "react";
-import product from '../../data/item.json'
+/* import product from '../../data/item.json' */
 import { RatingView } from 'react-simple-star-rating';
 import { useNavigate } from "react-router-dom";
 import Swal from 'sweetalert2';
 import "./Item.scss";
 
-function Item() {
+function Item({product}) {
 
   let navigate = useNavigate();
 
@@ -32,8 +32,11 @@ function Item() {
           <span>OFF</span>
         </li>
       }
-        <li className='cardcontainer__image'>
-          <img src={product.imageUrl}></img>
+        <li className='cardcontainer__image  cardcontainer__image--main'>
+          <img  src={product.imageUrl[0]}></img>
+        </li>
+        <li className='cardcontainer__image cardcontainer__image--hover'>
+          <img  src={product.imageUrl[1]}></img>
         </li>
         <li className='cardcontainer__item'>
           <p>{product.brand} {product.model}</p>

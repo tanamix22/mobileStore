@@ -1,0 +1,201 @@
+[
+    {
+        "productId": 1,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "stars": 4,
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": null,
+        "price": 259.90
+    },
+    {
+        "productId": 2,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "stars": 4,
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": 290.00,
+        "price": 259.90
+    },
+    {
+        "productId": 3,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "stars": 4,
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": null,
+        "price": 259.90
+    },
+    {
+        "productId": 4,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "stars": 4,
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": null,
+        "price": 259.90
+    },
+    {
+        "productId": 5,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "stars": 4,
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": null,
+        "price": 259.90
+    },
+    {
+        "productId": 6,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "stars": 4,
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": null,
+        "price": 259.90
+    },
+    {
+        "productId": 7,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "stars": 4,
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": 290.00,
+        "price": 259.90
+    },{
+        "productId": 8,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": null,
+        "price": 259.90
+    },
+    {
+        "productId": 9,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "stars": 4,
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": null,
+        "price": 259.90
+    },{
+        "productId": 10,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "stars": 4,
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": null,
+        "price": 259.90
+    },{
+        "productId": 11,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "stars": 4,
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": null,
+        "price": 259.90
+    },
+    {
+        "productId": 12,
+        "brand": "Samsung",
+        "model": "Galaxy S23",
+        "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
+        "category": "recommended",
+        "color": ["color__three", "color__one", "color__two"],
+        "storage": [ "120", "250", "500"],
+        "imageUrl":[
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
+            "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
+        ],
+        "listPrice": 290.00,
+        "price": 259.90
+    }
+]
