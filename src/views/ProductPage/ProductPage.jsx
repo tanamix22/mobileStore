@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { NavLink, useParams } from 'react-router-dom'
+import { NavLink, useParams, useNavigate } from 'react-router-dom'
 import { getProduct } from '../../utils/helpers'
 import Layout from '../../components/Layout/Layout'
 import Products from '../../data/products.json'
@@ -9,24 +9,56 @@ import './ProductPage.scss'
 import ProductImage from '../../components/ProductImage/ProductImage'
 
 function ProductPage () {
-  const [item, setItem] = useState()
   const { id } = useParams()
+  const [item] = useState(getProduct(Products, id))
+  const [activeSection, setActiveSection] = useState(false);
+  const navigate = useNavigate()
+  const [dataOption, setDataOption] = useState({
+    idProduct: item.productId,
+    StorageId:item.storage[0].id,
+    colorId:""
+  });
 
   useEffect(() => {
-    setItem(getProduct(Products, id))
-  }, [])
+    console.log("dataOption", dataOption)
+  }, [dataOption])
 
   const handleBuy = () => {
-    Swal.fire({
-      title: 'Sucess!',
-      text: 'Product has been added to your cart',
-      icon: 'success',
-      confirmButtonText: 'Ok'
-    })
+    if(dataOption. colorId === ""){
+      Swal.fire({title: "Error", text: "select a color please", icon: "error"})
+    }else{
+      Swal.fire({
+        title: 'Sucess!',
+        text: `Product con id:' ${dataOption.idProduct} colorId: ${dataOption.colorId}  StorageId: ${dataOption.StorageId} has been added to your cart'`,
+        icon: 'success',
+        confirmButtonText: 'Ok'
+      })
+      navigate('/')
+    }
+   
   }
+  const handleColorChange = (colorId) => {
+    setDataOption({
+      ...dataOption,
+      colorId,
+    });
+  };
+
+  const handleStorageChange = (event) => {
+    setDataOption({
+      ...dataOption,
+      StorageId:event.target.value
+    });
+  };
+
 
   return (
     <Layout>
+      {
+        (item === undefined)
+        ?<p>loading</p>
+        :
+
       <div className='pdpsection'>
         <section className='pdpsection__backpage'>
           <NavLink to='/'>
@@ -38,28 +70,54 @@ function ProductPage () {
           <ProductImage item={item} />
           <section className='section__details'>
             <div className='container'>
-              <h3 className='section__details--name'>{item?.brand} {item?.model}</h3>
-              <p className='section__details--description'> {item?.productDetail}</p>
+              <h3 className='section__details--name'>{item.brand} {item.model}</h3>
+              <p className='section__details--description'> {item.productDetail}</p>
+              <div className='section__details--feacture'>
+                <div onClick={() => setActiveSection(!activeSection) } className='section__details--feactureClick'>
+                  <strong>
+                    <p>Technical Features </p>
+                    <p className='section__details--feactureActive'>
+                      { activeSection ? "-" : "+"}
+                    </p>  
+                  </strong>
+                </div>
+                {
+                    activeSection
+                  &&
+                    <ul>
+                      <li><span>CPU: </span> {item.cpu} </li>
+                      <li><span>RAM: </span> {item.ram} </li>
+                      <li><span>OS: </span> {item.os} </li>
+                      <li><span>Batery: </span> {item.batery} </li>
+                      <li><span>Cam: </span> {item.cam} </li>
+                      <li><span>Dimensions: </span> {item.dimensions} </li>
+                      <li><span>Weight: </span> {item.weight} </li>
+                     </ul>
+                }
+              </div>
               <p className='section__details--select'>Type of the product</p>
               <div>
-                <select className='section__details--selector'>
-                  <option>--Select--</option>
+                <select className='section__details--selector' onChange={handleStorageChange}>
                   {
-                            item?.storage.map((item, index) => (
-                              <option key={index}> {item} </option>
-                            ))
-                        }
+                    item?.storage.map((item) => (
+                       <option  value={item.id} key={item.id}> {item.capacity} </option>
+                     ))
+                  }
                 </select>
               </div>
               <div className='section__details--sdk'>
                 <p>Choose color</p>
                 {
-                            item?.color.map((item, index) => (
-                              <input type='button' key={index} className={item} />
-                            ))
-                        }
+                  item?.color.map((item) => (
+                    <input 
+                    onClick={() => handleColorChange(item.id)} 
+                    style={dataOption.colorId === item.id ? { border: '3px solid red' } : {}}
+                    type='button' key={item.id} 
+                    className={`${item.color} color`} />
+                  ))
+                }
               </div>
-              <p className='section__details--price'> $105.67 </p>
+              <p className='section__details--price'> $ {item.price} </p>
               <input
                 className='section__details--btn'
                 type='button'
@@ -70,6 +128,7 @@ function ProductPage () {
           </section>
         </div>
       </div>
+    }
     </Layout>
   )
 }

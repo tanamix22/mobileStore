@@ -15,3 +15,18 @@ export const imageFirst = (arr, index) => {
 
   return arr
 }
+
+export const StyleGrid = (products) => {
+  let style = {}
+  if(products.length <= 3 ){
+    style = {
+      justifyContent: 'center'
+    };
+  }
+  return style
+}
+
+export const SearchFilter = (Products, word) => {
+  let filter = Products.filter((element) =>(element.model+element.brand).toUpperCase().includes(word?.toUpperCase()));
+  return filter;
+}

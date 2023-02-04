@@ -5,8 +5,8 @@
         "model": "Galaxy S23 prueba1",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "stars": 4,
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
@@ -14,16 +14,23 @@
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": null,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },
     {
         "productId": 2,
         "brand": "Samsung",
-        "model": "Galaxy S23 prueba2",
+        "model": "Galaxy S23 prueba12",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "stars": 4,
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
@@ -31,16 +38,23 @@
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": 290.00,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },
     {
         "productId": 3,
-        "brand": "Samsung",
-        "model": "Galaxy S23",
+        "brand": "Motorola",
+        "model": "Z raizen 10 prueba123",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "stars": 4,
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
@@ -48,16 +62,23 @@
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": null,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },
     {
         "productId": 4,
-        "brand": "Samsung",
-        "model": "Galaxy S23",
+        "brand": "Motorola",
+        "model": "Z raizen 10",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "stars": 4,
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
@@ -65,7 +86,14 @@
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": null,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },
     {
         "productId": 5,
@@ -73,8 +101,8 @@
         "model": "Galaxy S23",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "stars": 4,
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
@@ -82,7 +110,14 @@
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": null,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },
     {
         "productId": 6,
@@ -90,8 +125,8 @@
         "model": "Galaxy S23",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "stars": 4,
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
@@ -99,7 +134,14 @@
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": null,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },
     {
         "productId": 7,
@@ -107,8 +149,8 @@
         "model": "Galaxy S23",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "stars": 4,
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
@@ -116,22 +158,36 @@
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": 290.00,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },{
         "productId": 8,
         "brand": "Samsung",
         "model": "Galaxy S23",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": null,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },
     {
         "productId": 9,
@@ -139,8 +195,8 @@
         "model": "Galaxy S23",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "stars": 4,
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
@@ -148,15 +204,22 @@
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": null,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },{
         "productId": 10,
         "brand": "Samsung",
         "model": "Galaxy S23",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "stars": 4,
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
@@ -164,15 +227,22 @@
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": null,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },{
         "productId": 11,
         "brand": "Samsung",
         "model": "Galaxy S23",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "stars": 4,
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
@@ -180,7 +250,14 @@
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": null,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     },
     {
         "productId": 12,
@@ -188,14 +265,21 @@
         "model": "Galaxy S23",
         "productDetail": "A trio of new Samsung Galaxy S23 phones has arrived, as Samsung introduces its annual refresh to its flagship phone lineup.",
         "category": "recommended",
-        "color": ["color__three", "color__one", "color__two"],
-        "storage": [ "120", "250", "500"],
+        "color":[{ "id":"COLOR10","color":"color__three"} ,{ "id":"COLOR20","color":"color__one"}],
+        "storage": [{ "id":"CAPACITY100","capacity":"120GB"} ,{ "id":"CAPACITY200","capacity":"250GB"}],
         "imageUrl":[
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877974?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877975?$592_472_PNG$",
             "https://images.samsung.com/is/image/samsung/p6pim/co/2302/gallery/co-galaxy-s23-s918-446911-sm-s918bzgjltc-534877976?$592_472_PNG$"
         ],
         "listPrice": 290.00,
-        "price": 259.90
+        "price": 259.90,
+        "cpu": "Octa-core",
+        "ram": "128GB 8GB RAM, 256GB 8GB RAM, 512GB 8GB RAM",
+        "os": "Android 13, One UI 5.1",
+        "batery":"Li-Ion 3900 mAh, non-removable",
+        "cam": "50 MP, f/1.8, 24mm (wide), 1/1.56, 1.0µm, Dual Pixel PDAF, OIS",
+        "dimensions": "146.3 x 70.9 x 7.6 mm (5.76 x 2.79 x 0.30 in)",
+        "weight": "168 g (5.93 oz)"
     }
 ]
