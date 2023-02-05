@@ -1,7 +1,7 @@
 <p align="center">
   <a href="#key-features">Key Features</a> •
   <a href="#specifications">Specifications</a> •
-  <a href="#">Demo</a> •
+  <a href="https://mobile-store-tana.netlify.app/">Demo</a> •
 </p>
 
 <div align="">
@@ -42,8 +42,11 @@ and the use of some javascript libraries like "sweetalert2" "react-simple-star-r
 <hr>
 
 Backend: for the endpoints use my own backend that I carry out for this test
-- <a href="https://github.com/tanachnology/ecommerce-my-store-backend">ecommerce-my-store-backend</a> •
+<a href="https://github.com/tanachnology/ecommerce-my-store-backend">ecommerce-my-store-backend</a> 
 
+<br>
+<hr>
+deply with netlify <a href="https://mobile-store-tana.netlify.app/">Demo</a><a href="https://mobile-store-tana.netlify.app/">Demo</a>
 <br>
 <hr>
 
