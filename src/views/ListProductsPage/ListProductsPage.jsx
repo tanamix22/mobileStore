@@ -1,20 +1,29 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../../components/Layout/Layout'
 import Item from '../../components/Item/Item'
-import Products from '../../data/products.json'
+/* import Products from '../../data/products.json' */
 import Search from '../../components/Search/Search'
 import { StyleGrid, SearchFilter } from '../../utils/helpers';
 import { NavLink } from "react-router-dom";
 import './ListProductsPage.scss'
+import { getData } from '../../utils/servises'
 
 function ListProductsPage () {
   const [word, setIWord] = useState('');
-  const [products, setProducts] = useState(Products);
+  const [data, setData] = useState([]);
+  const [products, setProducts] = useState([]);
 
   useEffect(()=>{
-    let filter = SearchFilter(Products, word)
+    getData().then((res) => {
+      setData(res.data);
+      setProducts(res.data)
+    });
+  },[])
+
+  useEffect(()=>{
+    let filter = SearchFilter(data, word)
     if(word.length <= 0){
-      setProducts(Products)
+      setProducts(data)
     }
     setProducts(filter);
   },[word])

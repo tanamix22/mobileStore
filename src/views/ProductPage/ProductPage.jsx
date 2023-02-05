@@ -1,32 +1,41 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useParams, useNavigate } from 'react-router-dom'
-import { getProduct } from '../../utils/helpers'
 import Layout from '../../components/Layout/Layout'
-import Products from '../../data/products.json'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
+import { getProductById } from '../../utils/servises'
 import Swal from 'sweetalert2'
 import './ProductPage.scss'
 import ProductImage from '../../components/ProductImage/ProductImage'
 
 function ProductPage () {
   const { id } = useParams()
-  const [item] = useState(getProduct(Products, id))
+  const [ item, setItem ] = useState({})
   const [activeSection, setActiveSection] = useState(false);
   const navigate = useNavigate()
-  const [dataOption, setDataOption] = useState({
-    idProduct: item.productId,
-    StorageId:item.storage[0].id,
-    colorId:""
-  });
+  const [dataOption, setDataOption] = useState({});
 
   useEffect(() => {
-    console.log("dataOption", dataOption)
-  }, [dataOption])
+    getProductById(id).then((res) => {
+      setItem(res.product)
+      console.log("item", item)
+      
+      setDataOption({
+        idProduct: res.product.productId,
+        StorageId:res.product.storage[0].id,
+        colorId:""
+      })
+    })
+  }, [])
+
+/*   useEffect(() => {
+    
+  }, [dataOption]) */
 
   const handleBuy = () => {
-    if(dataOption. colorId === ""){
+    if(dataOption.colorId === ""){
       Swal.fire({title: "Error", text: "select a color please", icon: "error"})
     }else{
+      console.log("data", dataOption)
       Swal.fire({
         title: 'Sucess!',
         text: `Product con id:' ${dataOption.idProduct} colorId: ${dataOption.colorId}  StorageId: ${dataOption.StorageId} has been added to your cart'`,
@@ -55,7 +64,7 @@ function ProductPage () {
   return (
     <Layout>
       {
-        (item === undefined)
+        (Object.keys(item).length === 0)  || (Object.keys(dataOption).length === 0) 
         ?<p>loading</p>
         :
 
@@ -70,8 +79,8 @@ function ProductPage () {
           <ProductImage item={item} />
           <section className='section__details'>
             <div className='container'>
-              <h3 className='section__details--name'>{item.brand} {item.model}</h3>
-              <p className='section__details--description'> {item.productDetail}</p>
+              <h3 className='section__details--name'>{item?.brand} {item?.model}</h3>
+              <p className='section__details--description'> {item?.productDetail}</p>
               <div className='section__details--feacture'>
                 <div onClick={() => setActiveSection(!activeSection) } className='section__details--feactureClick'>
                   <strong>
@@ -85,13 +94,13 @@ function ProductPage () {
                     activeSection
                   &&
                     <ul>
-                      <li><span>CPU: </span> {item.cpu} </li>
-                      <li><span>RAM: </span> {item.ram} </li>
-                      <li><span>OS: </span> {item.os} </li>
-                      <li><span>Batery: </span> {item.batery} </li>
-                      <li><span>Cam: </span> {item.cam} </li>
-                      <li><span>Dimensions: </span> {item.dimensions} </li>
-                      <li><span>Weight: </span> {item.weight} </li>
+                      <li><span>CPU: </span> {item?.cpu} </li>
+                      <li><span>RAM: </span> {item?.ram} </li>
+                      <li><span>OS: </span> {item?.os} </li>
+                      <li><span>Batery: </span> {item?.batery} </li>
+                      <li><span>Cam: </span> {item?.cam} </li>
+                      <li><span>Dimensions: </span> {item?.dimensions} </li>
+                      <li><span>Weight: </span> {item?.weight} </li>
                      </ul>
                 }
               </div>
@@ -117,7 +126,7 @@ function ProductPage () {
                   ))
                 }
               </div>
-              <p className='section__details--price'> $ {item.price} </p>
+              <p className='section__details--price'> $ {item?.price} </p>
               <input
                 className='section__details--btn'
                 type='button'
