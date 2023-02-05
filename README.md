@@ -41,10 +41,11 @@ and the use of some javascript libraries like "sweetalert2" "react-simple-star-r
 <br>
 <hr>
 
+Backend: for the endpoints use my own backend that I carry out for this test
+- <a href="https://github.com/tanachnology/ecommerce-my-store-backend">ecommerce-my-store-backend</a> •
+
 <br>
 <hr>
-for the endpoints use my own backend that I carry out for this test
-- <a href="https://github.com/tanachnology/ecommerce-my-store-backend">ecommerce-my-store-backend</a> •
 
 ## Project Scripts
 | Name | Description |
