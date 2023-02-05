@@ -17,12 +17,14 @@
 - interactive chef
 - implementation of states and contexts
 - data persistence
-- implementation of plp and pdp pages
+- implementation of plp and pdp views
+- Product Actions
 - interactive images component
 - User-Friendly Navigation.
 - Product Filtering, Sorting.
 - Related Products.
 - Shopping cart.
+- SPA aplication
 
 
 <br>
@@ -39,8 +41,15 @@ and the use of some javascript libraries like "sweetalert2" "react-simple-star-r
 <br>
 <hr>
 
+<br>
+<hr>
+for the endpoints use my own backend that I carry out for this test
+- <a href="https://github.com/tanachnology/ecommerce-my-store-backend">ecommerce-my-store-backend</a> •
+
 ## Project Scripts
 | Name | Description |
 | ------ | ------ |
 | npm install | install all dependencies |
 | npm run dev | run server|
+| npm run lint | run eslint|
+| npm run build | run build|
