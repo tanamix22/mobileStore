@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Layout from '../../components/Layout/Layout'
 import Item from '../../components/Item/Item'
-/* import Products from '../../data/products.json' */
 import Search from '../../components/Search/Search'
 import { StyleGrid, SearchFilter } from '../../utils/helpers';
 import { NavLink } from "react-router-dom";

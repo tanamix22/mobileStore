@@ -4,8 +4,10 @@ export const GlobalContext = createContext({})
 
 export function DataContextProvider ({ children }) {
   const [adjustment, setAdjustment] = useState(window.innerWidth)
+  const [cartCount, setCartCount] = useState(0)
 
-  const value = { adjustment, setAdjustment }
+
+  const value = { adjustment, setAdjustment, cartCount, setCartCount }
 
   return (
     <GlobalContext.Provider value={value}>

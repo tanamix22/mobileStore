@@ -1,15 +1,7 @@
 import axios from "axios";
 
-
-export const getProductById = async (id) => {
-    const response = await axios.get(
-      `https://my-store-backend.up.railway.app/api/v1/products/${id}`
-    );
-    return response.data;
-};
-
-
-export const getDataFromAPI = async () => {
+//service to obtain products with the functionalities of saving in memory to avoid unnecessary calls.
+const getDataFromAPI = async () => {
     const response = await axios.get(
       "https://my-store-backend.up.railway.app/api/v1/products"
     );
@@ -17,13 +9,13 @@ export const getDataFromAPI = async () => {
 };
 
 
-export const setDataInStorage = (data) => {
+const setDataInStorage = (data) => {
     localStorage.setItem("data", JSON.stringify(data));
     localStorage.setItem("timestamp", Date.now());
   };
   
 
-  export const getDataFromStorage = () => {
+  const getDataFromStorage = () => {
     const data = localStorage.getItem("data");
     const timestamp = localStorage.getItem("timestamp");
     if (data && timestamp && Date.now() - timestamp < 60 * 60 * 1000) {
@@ -42,5 +34,21 @@ export const getData = async () => {
     setDataInStorage(dataFromAPI);
     return dataFromAPI;
   };
-  
-  export default { getData, getProductById };
+
+//Functionalities to obtain product by id and post cart, data persistence was not carried out because each query can give a different answer and body due to application logic, it would not be convenient.
+export const getProductById = async (id) => {
+    const response = await axios.get(
+      `https://my-store-backend.up.railway.app/api/v1/products/${id}`
+    );
+    return response.data;
+};
+
+export const postProductCart = async (body) => {
+  const response = await axios.post(
+    `https://my-store-backend.up.railway.app/api/v1/products`,
+    body
+  );
+  return response.data;
+};
+
+export default { getData, getProductById, postProductCart };

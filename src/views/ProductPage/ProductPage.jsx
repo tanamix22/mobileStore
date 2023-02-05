@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 import { NavLink, useParams, useNavigate } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
-import { getProductById } from '../../utils/servises'
+import { getProductById, postProductCart } from '../../utils/servises'
+import {localStoreCart } from '../../utils/helpers'
 import Swal from 'sweetalert2'
 import './ProductPage.scss'
 import ProductImage from '../../components/ProductImage/ProductImage'
@@ -17,7 +18,6 @@ function ProductPage () {
   useEffect(() => {
     getProductById(id).then((res) => {
       setItem(res.product)
-      console.log("item", item)
       
       setDataOption({
         idProduct: res.product.productId,
@@ -27,22 +27,27 @@ function ProductPage () {
     })
   }, [])
 
-/*   useEffect(() => {
-    
-  }, [dataOption]) */
 
   const handleBuy = () => {
     if(dataOption.colorId === ""){
       Swal.fire({title: "Error", text: "select a color please", icon: "error"})
     }else{
-      console.log("data", dataOption)
-      Swal.fire({
-        title: 'Sucess!',
-        text: `Product con id:' ${dataOption.idProduct} colorId: ${dataOption.colorId}  StorageId: ${dataOption.StorageId} has been added to your cart'`,
-        icon: 'success',
-        confirmButtonText: 'Ok'
+      postProductCart(dataOption).then((res)=>{
+
+        localStoreCart(res)
+
+        Swal.fire({
+          title: 'Sucess!',
+          text: `Product con id:' ${dataOption.idProduct} colorId: ${dataOption.colorId}  StorageId: ${dataOption.StorageId} has been added to your cart'`,
+          icon: 'success',
+          confirmButtonText: 'Ok'
+        })
+        navigate('/')
+
+      }).catch((error) => {
+        console.error("error: ",error);
       })
-      navigate('/')
+
     }
    
   }

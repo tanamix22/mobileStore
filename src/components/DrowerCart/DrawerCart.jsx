@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react'
 import { GlobalContext } from '../../contexts/DataContext'
-import { setDraweView } from '../../utils/helpers'
+import { setDraweView , getDataCountFromStorage } from '../../utils/helpers'
 import Drawer from 'react-modern-drawer'
 import 'react-modern-drawer/dist/index.css'
 import { TiShoppingCart } from 'react-icons/ti'
@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import './DrawerCart.scss'
 
 function DrawerCart () {
-  const { adjustment, setAdjustment } = useContext(GlobalContext)
+  const { adjustment, setAdjustment, cartCount, setCartCount } = useContext(GlobalContext)
   const [isOpen, setIsOpen] = useState(false)
   const navigate = useNavigate()
 
@@ -22,6 +22,11 @@ function DrawerCart () {
 
   useEffect(() => {
     window.addEventListener('resize', handleChange)
+    /* let count = localStorage.getItem("cartCount") */
+    let count = getDataCountFromStorage()
+    if (count !== null) {
+      setCartCount(count)
+    }
   }, [])
 
   return (
@@ -29,7 +34,7 @@ function DrawerCart () {
       <div className='cart' onClick={toggleDrawer}>
         <TiShoppingCart />
         <div className='cart__pop'>
-          <span>2</span>
+          <span> {cartCount}</span>
         </div>
       </div>
       <Drawer
@@ -43,7 +48,7 @@ function DrawerCart () {
           <ul className='cart__container--heading'>
             <li className='cart__container--heading-item'>
               <span>My Cart</span>
-              <span>(0 items)</span>
+              <span>({cartCount} items)</span>
             </li>
             <li className='cart__container--heading-btn'>
               <button onClick={toggleDrawer}>Close</button>
