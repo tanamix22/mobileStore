@@ -1,6 +1,6 @@
 import { RatingView } from 'react-simple-star-rating'
 import { useNavigate } from 'react-router-dom'
-import Swal from 'sweetalert2'
+/* import Swal from 'sweetalert2' */
 import './Item.scss'
 
 function Item ({ product }) {
@@ -8,16 +8,6 @@ function Item ({ product }) {
 
   const handleClick = () => {
     navigate(`/product/${product.productId}`)
-  }
-
-  const handleBuy = (event) => {
-    event.stopPropagation()
-    Swal.fire({
-      title: 'Sucess!',
-      text: 'Product has been added to your cart',
-      icon: 'success',
-      confirmButtonText: 'Ok'
-    })
   }
 
   return (
@@ -40,9 +30,6 @@ function Item ({ product }) {
       </li>
       <li className='cardcontainer__price'>
         <p>$ {product.price}</p>
-      </li>
-      <li className='cardcontainer__btn'>
-        <button onClick={handleBuy}>Add To Cart</button>
       </li>
     </ul>
   )

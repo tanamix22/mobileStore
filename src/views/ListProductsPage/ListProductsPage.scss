@@ -2,14 +2,21 @@
 
 .grid{
     display: flex;
-    justify-content: center;
     grid-gap: 20px;
     flex-wrap: wrap;
-    padding: 10px;
+    padding: 55px 10px;
     @media (max-width:$desktop) {
         padding:25px;
+        justify-content: center; 
     }
     @media (min-width:770px) {
-        justify-content: space-between;
+        justify-content: space-between ;
+    }
+    &__notFound{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0;
     }
 }

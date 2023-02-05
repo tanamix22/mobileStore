@@ -13,6 +13,12 @@
 
 ## Key Features
 
+- search by brand and name
+- interactive chef
+- implementation of states and contexts
+- data persistence
+- implementation of plp and pdp pages
+- interactive images component
 - User-Friendly Navigation.
 - Product Filtering, Sorting.
 - Related Products.
@@ -23,7 +29,8 @@
 <hr>
 
 ## Specifications 
-<p>The application is user-friendly web design made with <b>React  as core</b>, highly-responsive mobile site with Sass as preprocessor and implementing CSS, smooth sales channels integration with React usecontext, usestate, react-router-dom and localStorage to persist data between components.</p>
+<p>The application is user-friendly web design made with <b>React  as core</b>, 
+and the use of some javascript libraries like "sweetalert2" "react-simple-star-rating" and "react-icons" for the use of icons, highly-responsive mobile site with Sass as preprocessor and implementing CSS, smooth sales channels integration with React usecontext, usestate, react-router-dom and localStorage to persist data between components.</p>
 
 - [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)

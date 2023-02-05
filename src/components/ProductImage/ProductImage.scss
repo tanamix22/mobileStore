@@ -2,9 +2,14 @@
 
 .section__image {
     margin: 20px;
+    @media (max-width: $desktop) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .main__image {
         width: 75%;
-        cursor:crosshair;
         &:hover{
             scale: 1.3;
         }
