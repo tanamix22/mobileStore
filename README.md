@@ -57,3 +57,4 @@ deply with netlify <a href="https://mobile-store-tana.netlify.app/">Demo</a><a h
 | npm run dev | run server|
 | npm run lint | run eslint|
 | npm run build | run build|
+ npm run test | run test|
