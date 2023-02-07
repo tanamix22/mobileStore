@@ -50,3 +50,44 @@ export const getDataCountFromStorage = () => {
   }
   return null;
 };
+
+export const localStoreOrderData = (item) => {
+  let orderData = localStorage.getItem("orderData")
+  let array = []
+  if (orderData !== null) {
+    array = JSON.parse(orderData);
+    array.push(item); 
+    localStorage.setItem("orderData", JSON.stringify(array) );
+    localStorage.setItem("timestampOrderData", Date.now());
+  }else{
+    array.push(item)
+    localStorage.setItem("orderData", JSON.stringify(array));
+    localStorage.setItem("timestampOrderData", Date.now());
+  } 
+}
+
+export const getDataOrderDataFromStorage = () => {
+  const orderData = localStorage.getItem("orderData");
+  const timestampOrderData = localStorage.getItem("timestampOrderData");
+  if (orderData && timestampOrderData && Date.now() - timestampOrderData < 60 * 60 * 1000) {
+    return JSON.parse(orderData);
+  }
+  return null;
+};
+
+export const getTotalPrice = (orderData) => {
+  let total=0
+  if(orderData !== null){
+    orderData.map((item)=>{ 
+      total = item.price + total
+    }) 
+  }
+  return total.toFixed(2)  
+}
+
+export const clearDataLocalStore = () => {
+    localStorage.removeItem("orderData");
+    localStorage.removeItem("cartCount");
+    localStorage.removeItem("timestampCount");
+    localStorage.removeItem("timestampOrderData");
+}

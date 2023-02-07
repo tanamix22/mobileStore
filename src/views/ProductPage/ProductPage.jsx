@@ -1,24 +1,26 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useContext } from 'react'
+import { GlobalContext } from '../../contexts/DataContext';
 import { NavLink, useParams, useNavigate } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
 import { HiArrowNarrowLeft } from 'react-icons/hi'
-import { getProductById, postProductCart } from '../../utils/servises'
-import {localStoreCart } from '../../utils/helpers'
+import { getProductById, postProductCart } from '../../utils/services'
+import {localStoreCart, localStoreOrderData } from '../../utils/helpers'
 import Swal from 'sweetalert2'
 import './ProductPage.scss'
 import ProductImage from '../../components/ProductImage/ProductImage'
+import ProductAction from '../../components/ProductAction/ProductAction';
+import ProductDetail from '../../components/ProductDetail/ProductDetail';
 
 function ProductPage () {
   const { id } = useParams()
   const [ item, setItem ] = useState({})
-  const [activeSection, setActiveSection] = useState(false);
   const navigate = useNavigate()
   const [dataOption, setDataOption] = useState({});
+  const { orderData } = useContext(GlobalContext)
 
   useEffect(() => {
     getProductById(id).then((res) => {
       setItem(res.product)
-      
       setDataOption({
         idProduct: res.product.productId,
         StorageId:res.product.storage[0].id,
@@ -29,42 +31,24 @@ function ProductPage () {
 
 
   const handleBuy = () => {
-    if(dataOption.colorId === ""){
-      Swal.fire({title: "Error", text: "select a color please", icon: "error"})
+    if(dataOption.colorId === ""){ Swal.fire({title: "Error", text: "select a color please", icon: "error" })
     }else{
-      postProductCart(dataOption).then((res)=>{
-
-        localStoreCart(res)
-
-        Swal.fire({
-          title: 'Sucess!',
-          text: `Product con id:' ${dataOption.idProduct} colorId: ${dataOption.colorId}  StorageId: ${dataOption.StorageId} has been added to your cart'`,
-          icon: 'success',
-          confirmButtonText: 'Ok'
-        })
-        navigate('/')
-
-      }).catch((error) => {
-        console.error("error: ",error);
-      })
-
-    }
-   
+      const findRepeatElement = orderData?.find((element)=>element.productId === item?.productId)
+      if(findRepeatElement === undefined){
+        postProductCart(dataOption).then((res)=>{
+          localStoreCart(res)
+          localStoreOrderData(item)
+          Swal.fire({ title: 'Sucess!', text: `Product con id:' ${dataOption.idProduct} colorId: ${dataOption.colorId}  StorageId: ${dataOption.StorageId} has been added to your cart'`, icon: 'success',confirmButtonText: 'Ok' })
+          navigate('/')
+          }).catch((error) => {
+            console.error("error: ",error);
+          })
+        }else{
+          Swal.fire({title: "Info", text: "the product has already been added to your shopping cart, add a new product to your list", icon: "info"})
+          navigate(`/`)
+        } 
+      }  
   }
-  const handleColorChange = (colorId) => {
-    setDataOption({
-      ...dataOption,
-      colorId,
-    });
-  };
-
-  const handleStorageChange = (event) => {
-    setDataOption({
-      ...dataOption,
-      StorageId:event.target.value
-    });
-  };
-
 
   return (
     <Layout>
@@ -72,7 +56,6 @@ function ProductPage () {
         (Object.keys(item).length === 0)  || (Object.keys(dataOption).length === 0) 
         ?<p>loading</p>
         :
-
       <div className='pdpsection'>
         <section className='pdpsection__backpage'>
           <NavLink to='/'>
@@ -84,53 +67,8 @@ function ProductPage () {
           <ProductImage item={item} />
           <section className='section__details'>
             <div className='container'>
-              <h3 className='section__details--name'>{item?.brand} {item?.model}</h3>
-              <p className='section__details--description'> {item?.productDetail}</p>
-              <div className='section__details--feacture'>
-                <div onClick={() => setActiveSection(!activeSection) } className='section__details--feactureClick'>
-                  <strong>
-                    <p>Technical Features </p>
-                    <p className='section__details--feactureActive'>
-                      { activeSection ? "-" : "+"}
-                    </p>  
-                  </strong>
-                </div>
-                {
-                    activeSection
-                  &&
-                    <ul>
-                      <li><span>CPU: </span> {item?.cpu} </li>
-                      <li><span>RAM: </span> {item?.ram} </li>
-                      <li><span>OS: </span> {item?.os} </li>
-                      <li><span>Batery: </span> {item?.batery} </li>
-                      <li><span>Cam: </span> {item?.cam} </li>
-                      <li><span>Dimensions: </span> {item?.dimensions} </li>
-                      <li><span>Weight: </span> {item?.weight} </li>
-                     </ul>
-                }
-              </div>
-              <p className='section__details--select'>Type of the product</p>
-              <div>
-                <select className='section__details--selector' onChange={handleStorageChange}>
-                  {
-                    item?.storage.map((item) => (
-                       <option  value={item.id} key={item.id}> {item.capacity} </option>
-                     ))
-                  }
-                </select>
-              </div>
-              <div className='section__details--sdk'>
-                <p>Choose color</p>
-                {
-                  item?.color.map((item) => (
-                    <input 
-                    onClick={() => handleColorChange(item.id)} 
-                    style={dataOption.colorId === item.id ? { border: '3px solid red' } : {}}
-                    type='button' key={item.id} 
-                    className={`${item.color} color`} />
-                  ))
-                }
-              </div>
+              <ProductDetail item={item} />
+              <ProductAction item= {item} dataOption={dataOption} setDataOption={setDataOption}/>
               <p className='section__details--price'> $ {item?.price} </p>
               <input
                 className='section__details--btn'

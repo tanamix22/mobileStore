@@ -5,7 +5,7 @@ import Search from '../../components/Search/Search'
 import { StyleGrid, SearchFilter } from '../../utils/helpers';
 import { NavLink } from "react-router-dom";
 import './ListProductsPage.scss'
-import { getData } from '../../utils/servises'
+import { getData } from '../../utils/services'
 
 function ListProductsPage () {
   const [word, setIWord] = useState('');
