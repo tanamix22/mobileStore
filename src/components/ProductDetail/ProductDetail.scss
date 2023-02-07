@@ -1,0 +1,38 @@
+@import '../../styles//vars';
+.section__details{
+    &--feacture{
+        color: $Primary-titles;
+        background: $dots;
+        &Click{
+            cursor: pointer;
+        }
+        &Active{
+            font-size: 20px;
+            padding-right: 20px;
+        }
+        p{
+            margin: 6px 0px 6px 0;
+        }
+        strong{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    @media(min-width: $desktop){
+        width: 50%;
+    }
+    &--title {
+        padding-top: 16px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &--name{
+        margin: 0;
+        color: $Primary-titles; 
+        font-size: 24px;
+    }
+    &--description{
+        font-size: 16px;
+        color: $Primary-titles; 
+    }
+}

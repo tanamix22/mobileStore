@@ -1,0 +1,41 @@
+
+@import '../../styles//vars';
+
+.section__details--select{
+        padding-top: 10px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+.section__details--sdk{
+        p{
+            padding-top: 10px;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .color{
+            margin: 6px;
+            border: none;
+            border-radius: 100%;
+            width: 25px;
+            height: 25px;
+            cursor: pointer; 
+        }
+        .color__one{
+            background: $Primary-titles;
+        }
+        .color__two{
+            background: violet;
+        }
+        .color__three{
+            background: blue;
+        }
+        .color__four{
+            background: burlywood;
+        }
+        .color__five{
+            background: lightgreen;
+        }
+        .color__six{
+            background: red;
+        }
+}
