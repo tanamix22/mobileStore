@@ -41,12 +41,16 @@ and the use of some javascript libraries like "sweetalert2" "react-simple-star-r
 <br>
 <hr>
 
-Backend: for the endpoints use my own backend that I carry out for this test
+## Backend
+For the endpoints use my own backend that I carry out for this test
 <a href="https://github.com/tanachnology/ecommerce-my-store-backend">ecommerce-my-store-backend</a> 
 
 <br>
 <hr>
-deply with netlify <a href="https://mobile-store-tana.netlify.app/">Demo</a><a href="https://mobile-store-tana.netlify.app/">Demo</a>
+
+## Deploy
+Deploy with netlify <a href="https://mobile-store-tana.netlify.app/">Demo</a>
+
 <br>
 <hr>
 
@@ -57,4 +61,4 @@ deply with netlify <a href="https://mobile-store-tana.netlify.app/">Demo</a><a h
 | npm run dev | run server|
 | npm run lint | run eslint|
 | npm run build | run build|
- npm run test | run test|
+| npm run test | run test|
