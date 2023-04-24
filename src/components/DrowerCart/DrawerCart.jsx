@@ -23,7 +23,11 @@ function DrawerCart () {
   useEffect(() => {
     setAdjustment(window.innerWidth);
     let count = getDataCountFromStorage()
-    setOrderData(getDataOrderDataFromStorage())
+    let dataOrderDataFromStorage = getDataOrderDataFromStorage()
+    
+    if (dataOrderDataFromStorage !== null) {
+      setOrderData(getDataOrderDataFromStorage())
+    }
     if (count !== null) {
       setCartCount(count)
     }
@@ -53,7 +57,7 @@ function DrawerCart () {
 
   return (
     <>
-      <div className='cart' onClick={toggleDrawer}>
+      <div className='cart' aria-label='Open cart drawer' onClick={toggleDrawer}>
         <TiShoppingCart />
         <div className='cart__pop'>
           <span> {cartCount}</span>
@@ -79,11 +83,11 @@ function DrawerCart () {
             </ul>
             <section className='baskets'>
                 {
-                    (orderData === null  || orderData.length <= 0 ) 
+                    (orderData === null  || orderData?.length <= 0 ) 
                     ? 
                     <p className='baskets__text'>Your cart is currently empty</p>
                     :
-                    orderData.map((order)=>{
+                    orderData?.map((order)=>{
                         return <Basket order={order} setIsOpen={setIsOpen} key={order.productId} />
                     })
                 }

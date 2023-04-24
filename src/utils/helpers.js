@@ -78,7 +78,7 @@ export const getDataOrderDataFromStorage = () => {
 export const getTotalPrice = (orderData) => {
   let total=0
   if(orderData !== null){
-    orderData.map((item)=>{ 
+    orderData?.map((item)=>{ 
       total = item.price + total
     }) 
   }

@@ -13,7 +13,7 @@ function Basket({order, setIsOpen}) {
     }
 
     const handleRemove = (order )=> {
-     const newOrder = orderData.filter((item)=> item.productId !== order.productId)
+     const newOrder = orderData?.filter((item)=> item.productId !== order.productId)
       setOrderData(newOrder)
      setCartCount(newOrder.length)
      localStorage.setItem("orderData", JSON.stringify(newOrder) );
